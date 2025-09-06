@@ -5,10 +5,22 @@ const withNextra = nextra({
 })
 
 /** @type {import('next').NextConfig} */
-export default withNextra({
+const nextConfig = {
   reactStrictMode: true,
-  devIndicators: false,
-  output: 'export',           // статический экспорт
-  images: { unoptimized: true },
-  trailingSlash: true
-})
+  output: 'export',
+  images: { 
+    unoptimized: true 
+  },
+  trailingSlash: true,
+  
+  // ✅ Ключевые настройки для префикса /uavos_website
+  basePath: '/uavos_website',
+  assetPrefix: '/uavos_website/',
+  
+  // Убираем devIndicators или исправляем
+  // devIndicators: {
+  //   position: 'bottom-right',
+  // },
+}
+
+export default withNextra(nextConfig)
