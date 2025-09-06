@@ -22,6 +22,18 @@ import { Bleed, Callout, Tabs, Steps } from 'nextra/components'
   </div>
   ---
 </Bleed>
+{/* =================== Один большой блок =================== */}
+<Bleed full>
+  <div className={styles.grid}>
+    <BlockCard
+      height={472}
+      href="/products"
+      image="/images/DcTGJHKV4AAuWAj.jpg"
+      footer={false}
+    />
+  </div>
+</Bleed>
+
 {/* =================== Горизонтальный блок-карточки =================== */}
 <Bleed full>
   <div className={styles.products__block}>
@@ -49,17 +61,7 @@ import { Bleed, Callout, Tabs, Steps } from 'nextra/components'
   </div>
 </Bleed>
 
-{/* =================== Один большой блок =================== */}
-<Bleed full>
-  <div className={styles.grid}>
-    <BlockCard
-      height={472}
-      href="/products"
-      image="/images/DcTGJHKV4AAuWAj.jpg"
-      footer={false}
-    />
-  </div>
-</Bleed>
+
 
 
 
