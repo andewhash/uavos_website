@@ -4,5 +4,8 @@ export default {
     project: {
       link: 'https://github.com/andewhash/uavos_website'
     },
-    // ... другие настройки темы
-  }
+    docsRepositoryBase: 'https://github.com/andewhash/uavos_website',
+    footer: {
+      text: 'UAVOS Documentation',
+    },
+  };
