@@ -1,17 +1,14 @@
+import nextra from 'nextra'
+
+const withNextra = nextra({
+  search: { codeblocks: false }
+})
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+export default withNextra({
   reactStrictMode: true,
   devIndicators: false,
-  output: 'export',
-  images: { 
-    unoptimized: true
-  },
-  trailingSlash: true,
-  basePath: '',
-  assetPrefix: '',
-  experimental: {
-    esmExternals: true,
-  }
-};
-
-export default nextConfig;
+  output: 'export',           // статический экспорт
+  images: { unoptimized: true },
+  trailingSlash: true
+})
