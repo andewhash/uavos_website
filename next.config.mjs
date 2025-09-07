@@ -11,6 +11,9 @@ const nextConfig = {
   images: { 
     unoptimized: true 
   },
+  experimental: {
+    optimizeCss: false // Отключаем оптимизацию CSS
+  },
   trailingSlash: true,
   
   // ✅ Ключевые настройки для префикса /uavos_website
